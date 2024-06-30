@@ -1,20 +1,66 @@
-.header{
-    max-width: 100%;
-    height: 96px;
-    flex-shrink: 0;
-    background: #D1BEAF;
-    justify-content: space-between;
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
     display: flex;
 }
 
+header{                 
+max-width: 100%px;
+height: 96px;
+flex-shrink: 0;
+background: #D1BEAF;
+}
+
+li{
+    display: inline-block;
+}
+
 .logo{
-    max-width: 50px;
-    height: 50px;
-    flex-shrink: 0;
-    
+width: 36px;
+height: 36px;
+flex-shrink: 0;
+display: inline-block;
 }
 
 
-.p1{
-    display: inline-block;
+.headerdiv1{
+    display: flex;
+}
+
+
+.a1{
+    width: 151px;
+color: #2C1508;
+
+font-family: "Copperplate Gothic Light";
+font-size: 27px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.a2{
+    width: 59px;
+height: 20px;
+flex-shrink: 0;
+color: #472D1C;
+
+font-family: "Copperplate Gothic Light";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.img1{
+    width: 28px;
+height: 28px;
+flex-shrink: 0;
+}
+
+
+.headerdiv{
+    display: flex;
+  justify-content: space-between;
+
 }
