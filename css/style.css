@@ -95,6 +95,7 @@ header ul li:hover {
 .landing{
   width: 100%;
   padding: 20px 10px;
+  background-color: #d6d4d4;
 }
 
 #image-overlay{
@@ -219,6 +220,7 @@ display: flex;
 .offer_card, .category_card, .recomendation_card, .bestsellers_card, .new_card{
   background-color: white;
   border: 1px solid #a38a68;
+  background-image: url(/images/backgroundimg.jpg)
 }
 .categories_p{
   width: 110px;
@@ -242,7 +244,7 @@ justify-self: flex-end;
 }
 
 .offer_p{
-    color: #EEDDCF;  
+    color: #000000;  
   font-family: "Bell MT";
   font-size: 30px;
   font-weight: 300;
@@ -279,7 +281,7 @@ height: 200px;
   width: 400px;
   height: 48px;
   flex-shrink: 0;
-  color: #fa0b0b8a;
+  color: #0000008a;
 }
 
 @media only screen and (max-width: 720px) {
