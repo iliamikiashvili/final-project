@@ -279,7 +279,7 @@ height: 200px;
   width: 400px;
   height: 48px;
   flex-shrink: 0;
-  color: #302923;
+  color: #fa0b0b8a;
 }
 
 @media only screen and (max-width: 720px) {
@@ -301,7 +301,8 @@ height: 200px;
 
 @media only screen and (max-width: 750px) {
   .offer_card p{
-  font-size: 25px;
+    font-size: 30px;
+    
   }
 }
 
@@ -324,7 +325,18 @@ height: 200px;
     display: flex;
     flex-direction: column;
   }
-  .recomendation_card, .new_card, .parts_card, .offer_card{
-    width: 250px;
+  .recomendation_card, .new_card, .parts_card, .offer_card, .category_card, .bestsellers_card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .recomendation_card{
+      flex-direction: column;
+    }
+}
+@media only screen and (max-width: 1400px) {
+  .recomend_p{
+    font-size: 15px;
   }
 }
