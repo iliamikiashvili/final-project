@@ -257,20 +257,67 @@ li {
   text-align: center;
 }
 
+
+.productbox{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 96px;
+  justify-content: space-between;
+  max-width: 1972px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .product {
-  width: 236px;
+  position: relative;
+  width: 236px; 
   height: 284px;
   flex-shrink: 0;
   border-radius: 15px;
   border: 1px solid #cbb294;
-  display: inline-block;
+  box-sizing: border-box;
+  background-color: lightgray; 
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.productbox{
-  width: 1238px;
-  height: 700px;
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  gap: 20px 98px; 
-  justify-content: center;
+@media (max-width: 984px) {
+  .product {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+
+.square {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #cbb294;
+}
+
+.product img {
+  width: 116px;
+  height: 174px;
+  margin: 20px 60px 90px; 
+  border-radius: 15px; 
+}
+
+.text {
+  width: 200px;
+  color: #302923;
+  font-family: "Bell MT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 200px; /* Adjusted top position */
+  right: 16px;
+  bottom: 44px;
+  left: 20px;
 }
