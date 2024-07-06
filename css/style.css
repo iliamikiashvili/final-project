@@ -170,7 +170,6 @@ section{
 .category_card{
   width: 340px;
   height: 220px;
-  background-color: yellow;
   border-radius: 20px;
   display: flex;
   justify-content:center;
@@ -183,14 +182,12 @@ section{
 .recomendation_card{
  width: 30%;
  height: 250px;
- background-color: black;
  border-radius: 20px;
 }
 
 .bestsellers_card{
   width: 236px;
   height: 284px;
-  background-color: blueviolet;
   border-radius: 20px;
   padding: 20px 25px 9px;
   display: flex;
@@ -202,14 +199,13 @@ section{
 .new_card{
   width: 30%;
  height: 250px;
- background-color: brown;
  border-radius: 20px;
+
 }
 
 .parts_card{
   width: 30%;
   height: 250px;
-  background-color: black;
   border-radius: 20px;
 }
 
@@ -220,6 +216,10 @@ flex-shrink: 0;
 display: flex;
 }
 
+.offer_card, .category_card, .recomendation_card, .bestsellers_card, .new_card{
+  background-color: white;
+  border: 1px solid #a38a68;
+}
 .categories_p{
   width: 110px;
 color: #000000;
