@@ -93,7 +93,7 @@ header ul li:hover {
 }
 
 .landing{
-  width: 100vp;
+  width: 100vw;
   padding: 20px 10px;
   background-color: #d6d4d4;
   overflow-x: hidden;
@@ -318,7 +318,7 @@ line-height: normal;
 
 @media only screen and (max-width: 750px) {
   .offer_card p{
-    font-size: 30px;
+    font-size: 20px;
     
   }
 }
@@ -342,7 +342,7 @@ line-height: normal;
     display: flex;
     flex-direction: column;
   }
-  .recomendation_card, .new_card, .parts_card, .offer_card, .category_card, .bestsellers_card{
+  .recomendation_card, .parts_card, .offer_card, .category_card, .bestsellers_card{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -353,3 +353,50 @@ line-height: normal;
     }
 }
 
+
+@media only screen and (max-width: 1000px) {
+ .new_p{
+   font-size: 10px;
+}
+.new_img{
+  width: 100px;
+  height: 100px;
+}
+}
+
+@media only screen and (max-width: 750px) {
+  .new_list, .parts_list{
+    display: flex;
+    flex-direction: column;
+  }
+   .new_card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .recomendation_card{
+      flex-direction: column;
+    }
+}
+@media only screen and (max-width: 400px) {
+  .bestsel_p{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .recomend_p{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+  .recomend_img{
+    width: 150px;
+    height: 150px;
+  }
+}
