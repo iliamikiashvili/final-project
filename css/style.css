@@ -332,6 +332,37 @@ section {
   height: 70%
 }
 
+.seemore_button{
+display: flex;
+width: 156px;
+height: 46px;
+padding: 10px 19px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #588bfa;
+padding: 10px 19px 10px 19px;
+}
+
+.seemore_button a{
+color: #302923;
+text-align: center;
+font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #000000;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.32px;
+text-transform: capitalize;
+
+}
+
+
 
 
 @media only screen and (max-width: 720px) {
@@ -343,6 +374,7 @@ section {
     display: block;
   }
 }
+
 
 @media only screen and (max-width: 450px) {
   .landing h1 {
