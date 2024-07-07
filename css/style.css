@@ -93,8 +93,7 @@ header ul li:hover {
 }
 
 .landing{
-  width: 100vw;
-  height: 100vp;
+  width: 100vp;
   padding: 20px 10px;
   background-color: #d6d4d4;
 }
@@ -337,15 +336,5 @@ height: 200px;
 @media only screen and (max-width: 1400px) {
   .recomend_p{
     font-size: 15px;
-  }
-}
-
-
-@media only screen and (max-width: 1400px) {
-  .landing{
-    width: 100vw;
-    height: 100vp;
-    padding: 20px 10px;
-    background-color: #d6d4d4;
   }
 }
