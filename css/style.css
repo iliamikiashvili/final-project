@@ -92,7 +92,7 @@ header ul li:hover {
   overflow: hidden;
   background-color: red;
   background-size: cover;
-  background-image: url("/images/back-template.jpg");
+  background-image: url("../images/back-template.jpg");
 }
 
 .landing {
@@ -229,7 +229,7 @@ section {
   padding: 20px;
   background-color: white;
   border: 1px solid #a38a68;
-  background-image: url(/images/backgroundimg.jpg);
+  background-image: url(../images/backgroundimg.jpg);
 }
 
 .parts_card {
@@ -253,10 +253,10 @@ section {
 .parts_card {
   background-color: white;
   border: 1px solid #a38a68;
-  background-image: url(/images/backgroundimg.jpg);
+  background-image: url(../images/backgroundimg.jpg);
 }
 
-.offer_p,
+.offer_p, 
 .categories_p,
 .bestsel_p,
 .new_p,
@@ -392,10 +392,11 @@ text-transform: capitalize;
 @media only screen and (max-width: 1000px) {
   .part_p{
     font-size: 20px;
-    width: 100px;
+    width: 80px;
   }
   .part_img{
-    width: 100px;
+    width: 70px;
+    height: 70px;
   }
 }
 
