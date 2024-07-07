@@ -7,9 +7,9 @@
   list-style: none;
   text-decoration: none;
 }
-
 header {
-  position: relative;
+  position: sticky;
+  top: 0;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -18,6 +18,16 @@ header {
   height: 7vh;
   background-color: rgba(84, 6, 156, 0.767);
   align-items: center;
+  z-index: 10; /* Ensure it stays above other content */
+}
+
+.header-stop {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 60vh; /* The point where the header should stop being sticky */
+  top: 50vh; /* This value should be the same as height */
 }
 
 header img {
@@ -54,7 +64,12 @@ header ul {
 i {
   cursor: pointer;
 }
-
+header,
+ul,
+li
+{
+  color: white;
+}
 header,
 ul,
 li,
@@ -364,25 +379,43 @@ border-radius: 20px;
 
 
 .product_card{
-width: 226px;
-height: 316px;
-flex-shrink: 0;
-border-radius: 15px;
-background-color: white;
-border: 1px solid #a38a68;
+  flex: 1 0 calc(25% - 20px); /* Each box takes up one quarter of the container's width */
+  margin: 10px; /* Optional: Add margin between boxes */
+  border: 1px solid #ccc;
+  padding: 20px;
+  height: 250px;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding and border are included in box's dimensions */
+border-radius: 20px;
 background-image: url(../images/backgroundimg.jpg);
 }
  
 
 .product_list{
-  gap: 10px;
-  padding: 10px;
-  height: fit-content ;
-  display: grid;
-  margin: 0 auto;
-  grid-template-rows: repeat(4, 1fr);
-  width: 100%
-}
+  display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 200vh; /* Full viewport height */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px;
+  }
+
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(84, 6, 156, 0.767); /* Adjusted background color */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh; /* Increased height to 10% of the viewport height */
+    z-index: 1000; /* Ensure footer is above other content */
+  }
+  
 
 @media only screen and (max-width: 720px) {
   nav {
@@ -514,3 +547,38 @@ background-image: url(../images/backgroundimg.jpg);
     height: 150px;
   }
 }
+
+@media (max-width: 800px) {
+  .product_card{
+      flex-basis: calc(50% - 20px); /* One box per row on smaller screens */
+      height: 200px;
+      width: 100%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+  .product_card {
+    flex-basis: calc(50% - 20px); /* Two boxes per row on smaller screens */
+    height: 200px; /* Adjust height as needed */
+    width: 100%;
+  }
+
+  .product_list {
+    height: 4000px; /* Adjusted height to ensure all items are visible in this media query */
+  }
+}
+
+/* Ensure boxes wrap into 1 column on very small screens */
+@media (max-width: 480px) {
+  .product_card {
+    flex-basis: calc(100% - 20px); /* One box per row on very small screens */
+  }
+
+  .product_list {
+    height: 3500px; /* Adjusted height to ensure all items are visible in this media query */
+    margin-bottom: 80px;  
+  }
+}
+
