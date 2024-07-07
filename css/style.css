@@ -236,6 +236,7 @@ section {
   width: 30%;
   height: 250px;
   border-radius: 20px;
+  padding: 20px 10px 10px 30px;
 }
 
 .categories_logo {
@@ -353,7 +354,19 @@ section {
   .offer_card p {
     font-size: 20px;
   }
+
 }
+
+@media only screen and (max-width: 1000px) {
+  .part_p{
+    font-size: 20px;
+    width: 100px;
+  }
+  .part_img{
+    width: 100px;
+  }
+}
+
 
 @media only screen and (max-width: 750px) {
   .offer_img,
