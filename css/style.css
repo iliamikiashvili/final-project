@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
-  width: 100vw;
+  width: 100%;
   height: 7vh;
   background-color: rgba(84, 6, 156, 0.767);
   align-items: center;
@@ -96,10 +96,11 @@ header ul li:hover {
 }
 
 .landing {
-  width: 100vw;
+  width: 100%;
   padding: 20px 10px;
   background-color: #d6d4d4;
   overflow-x: hidden;
+  overflow: hidden ;
 }
 
 #image-overlay {
@@ -130,7 +131,7 @@ header ul li:hover {
   border: none;
 }
 section {
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
   height: 100vh;
 }
@@ -361,14 +362,25 @@ background-color: rgb(93, 174, 240);
 border-radius: 20px;
 }
 
+.product_list{
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  gap: 50px;
+  height: 100vh;
+  width: 100%
+}
+
 .product_card{
- width: 226px;
+width: 226px;
 height: 316px;
 flex-shrink: 0;
 border-radius: 15px;
-border: 1px solid #CBB294;
-background-color: #000000;
+background-color: white;
+border: 1px solid #a38a68;
+background-image: url(../images/backgroundimg.jpg);
 }
+ 
 
 
 
