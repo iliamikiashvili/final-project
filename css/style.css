@@ -96,6 +96,7 @@ header ul li:hover {
   width: 100vp;
   padding: 20px 10px;
   background-color: #d6d4d4;
+  overflow-x: hidden;
 }
 
 #image-overlay{
@@ -203,11 +204,16 @@ section{
 }
 
 .new_card{
-  width: 30%;
+width: 30%;
  height: 250px;
  border-radius: 20px;
- background-color: #0000008a;
-
+ display: flex;
+ justify-content: center;
+ align-content: center;
+ padding: 20px;
+  background-color: white;
+ border: 1px solid #a38a68;
+ background-image: url(/images/backgroundimg.jpg)
 }
 
 .parts_card{
@@ -223,7 +229,7 @@ flex-shrink: 0;
 display: flex;
 }
 
-.offer_card, .category_card, .bestsellers_card, .recomendation_card, .new_card, .parts_card{
+.offer_card, .category_card, .bestsellers_card, .recomendation_card,   .parts_card{
   background-color: white;
   border: 1px solid #a38a68;
   background-image: url(/images/backgroundimg.jpg)
@@ -283,6 +289,12 @@ flex-shrink: 0;
 font-size: 15px;
 font-style: normal;
 line-height: normal;
+}
+
+.new_img{
+  width: 200px;
+  height: 200px;
+  display: flex;
 }
 
 
