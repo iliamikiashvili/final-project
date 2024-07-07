@@ -93,7 +93,8 @@ header ul li:hover {
 }
 
 .landing{
-  width: 100%;
+  width: 100vw;
+  height: 100vp;
   padding: 20px 10px;
   background-color: #d6d4d4;
 }
@@ -128,7 +129,7 @@ header ul li:hover {
 section{
   width: 100vw;
   flex-direction: column;
-  height: 200vh;
+  height: 100vh;
 }
 
 .categories, .offers, .recomendations, .bestsellers, .new, .parts{
@@ -201,6 +202,7 @@ section{
   width: 30%;
  height: 250px;
  border-radius: 20px;
+ background-color: #0000008a;
 
 }
 
@@ -217,19 +219,22 @@ flex-shrink: 0;
 display: flex;
 }
 
-.offer_card, .category_card, .recomendation_card, .bestsellers_card, .new_card{
+.offer_card, .category_card, .recomendation_card, .bestsellers_card, .new_card, .parts_card{
   background-color: white;
   border: 1px solid #a38a68;
   background-image: url(/images/backgroundimg.jpg)
 }
+
+.offer_p, .categories_p, .recomend_p, .bestsel_p, .new_p, .parts_p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #000000;
+}
 .categories_p{
   width: 110px;
-color: #000000;
-
-font-family: "Bell MT";
 font-size: 32px;
 font-style: normal;
-font-weight: 400;
 line-height: normal;
 }
 
@@ -244,10 +249,7 @@ justify-self: flex-end;
 }
 
 .offer_p{
-    color: #000000;  
-  font-family: "Bell MT";
   font-size: 30px;
-  font-weight: 300;
 }
 
 .bestsel_img{
@@ -262,12 +264,8 @@ justify-self: center;
   width: 210px;
 height: 48px;
 flex-shrink: 0;
-color: #302923;
-
-font-family: "Bell MT";
 font-size: 15px;
 font-style: normal;
-font-weight: 300;
 line-height: normal;
 }
 
@@ -281,7 +279,6 @@ height: 200px;
   width: 400px;
   height: 48px;
   flex-shrink: 0;
-  color: #0000008a;
 }
 
 @media only screen and (max-width: 720px) {
@@ -310,8 +307,8 @@ height: 200px;
 
 @media only screen and (max-width: 750px) {
   .offer_img, .bestsel_img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -340,5 +337,15 @@ height: 200px;
 @media only screen and (max-width: 1400px) {
   .recomend_p{
     font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .landing{
+    width: 100vw;
+    height: 100vp;
+    padding: 20px 10px;
+    background-color: #d6d4d4;
   }
 }
