@@ -401,7 +401,36 @@ background-image: url(../images/backgroundimg.jpg);
     
   }
 
+  .offer_card,
+  .category_card,
+  .bestsellers_card,
+  .recomendation_card,
+  .new_card,
+  .parts_card {
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
   
+  .offer_card:hover,
+  .category_card:hover,
+  .bestsellers_card:hover,
+  .recomendation_card:hover,
+  .new_card:hover,
+  .parts_card:hover {
+    transform: scale(1.05); /* Scale the card up by 5% on hover */
+  }
+
+  .product_card {
+    width: 200px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Example background color */
+    border: 1px solid #ccc; /* Example border */
+    margin: 10px; /* Adjust margin as needed */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .product_card:hover {
+    transform: scale(1.05); /* Scale the card up by 5% on hover */
+  }
   footer {
     position: relative;
     bottom: 0;
@@ -547,34 +576,124 @@ height: 32px;
     padding: 20px;
     box-sizing: border-box;
     margin: 20px;
-    background-color: #000000;
+  
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    gap: 20px; 
+    gap: 40px; 
+    
   }
   
 
 .customdiv {
-    height: 50%;
+  height: 440px;
     width: 100%; /* Default width */
     width: 610px; /* Maximum width */
     margin: 0 auto; /* Center align */
     box-sizing: border-box; /* Include padding and border in width calculation */
-   background-color: white;
+    background-color: white;
+    border: 3px solid #A9A9A9;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://images.unsplash.com/photo-1601933552240-d6b9e8e01cdc?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: 50% auto, cover; /* Half of the width and cover the other half */
+   }
 
-  }
+   .customdiv2{
+    height: 440px;
+      width: 100%; /* Default width */
+      width: 610px; /* Maximum width */
+      margin: 0 auto; /* Center align */
+      box-sizing: border-box; /* Include padding and border in width calculation */
+      background-color: white;
+      border: 3px solid #A9A9A9;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://thumbs.dreamstime.com/b/computer-cleaning-main-parts-brush-33678213.jpg');
+      background-size: 50% auto, cover; /* Half of the width and cover the other half */
+     }
+  
+   
+
   .inner-div{
     width: 100%;
     height: 85px;
-    background-color: red;
+    background-color: rgb(211, 74, 74);
+    padding: 20px 0px 20px 30px;
     /* Additional styles for .inner-div */
 }
-  
-.inner-div2{
+
+.inner-div h2, .inner-div2 h2{
+  font-size: 45px;
+  color: white; /* Adjust text color as needed */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+}
+ .inner-div2{
   width: 100%;
   height: 85px;
-  background-color: green;
-  /* Additional styles for .inner-div */
+  background-color: rgb(73, 192, 73);
+  padding: 20px 0px 20px 30px;
+} 
+.main_inner_div {
+  width: 295px;
+  height: 115px;
+  margin: 15px 0 0 15px; /* 15px margin from the top and left, 0 margin from the right and bottom */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.main_inner_div p{
+  color: #000000;
+  font-size: 15px;
+ 
+}
+
+
+.get-in-touch {
+  width: 136px;
+  height: 45px;
+  background-color: #FFFFFF;
+  padding: 12px 24px;
+  border: 3px solid #A9A9A9;
+  margin-left: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+
+  /* Center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-in-touch_div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.get-in-touch2{
+  width: 198px;
+  height: 45px;
+  background-color: #FFFFFF;
+  padding: 12px 24px;
+  border: 3px solid #A9A9A9;
+  margin-left: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+
+  /* Center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-in-touch a, .get-in-touch2 a{
+  font-size: 15px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.get-in-touch:hover {
+  background-color: #F5F5F5; /* Lighter background color on hover */
+  border-color: #CCCCCC; /* Lighter border color on hover */
+}
+
+.get-in-touch2:hover {
+  background-color: #F5F5F5; /* Lighter background color on hover */
+  border-color: #CCCCCC; /* Lighter border color on hover */
 }
 @media only screen and (max-width: 720px) {
   nav {
@@ -830,7 +949,7 @@ height: 32px;
     font-size: 12px;
   }
 }
-@media (max-width: 790px) {
+@media (max-width: 1150px) {
   .main_content_wrapper {
     flex-direction: column; /* Stack items vertically on smaller screens */
   }
@@ -860,3 +979,4 @@ height: 32px;
     margin-bottom: 10px; /* Further adjust for mobile screens */
   }
 }
+
