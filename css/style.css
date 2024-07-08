@@ -64,10 +64,11 @@ header ul {
 i {
   cursor: pointer;
 }
-header,
-ul,
-li
-{
+header ul, li{
+  color: white;
+}
+
+.white_a{
   color: white;
 }
 header,
@@ -114,6 +115,7 @@ header ul li:hover {
   width: 100%;
   padding: 20px 10px;
   background-color: #d6d4d4;
+  min-height: 100vh;
 }
 
 #image-overlay {
@@ -146,6 +148,7 @@ header ul li:hover {
 section {
   width: 100%;
   flex-direction: column;
+ min-height: 100vh;
 }
 
 .categories,
@@ -462,6 +465,10 @@ height: 18px;
 flex-shrink: 0;
  }
 
+ .footer_div a{
+    color: white;
+ }
+
  .footerlogo_img{
   width: 32px;
 height: 32px;
@@ -478,7 +485,66 @@ height: 32px;
   flex-direction: column;
   gap: 20px;
  }
- 
+ .content-wrapper {
+
+  max-width: 532px; /* Limiting the max-width to 800px *
+  padding: 20px; /* Adding padding for spacing */
+  box-sizing: border-box; /* Ensuring padding is included in width calculation */
+}
+
+.textdiv {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.text_h3 {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 40px; /* Adjust size as needed */
+  line-height: 1.2;
+}
+
+.text_h2 {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 60px; /* Adjust size as needed */
+  line-height: 1.2;
+}
+
+.text_red {
+  color: red;
+}
+
+.general_p {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 20px; /* Adjust size as needed */
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+.paragraph-wrapper {
+  max-width: 532px; /* Adjust if needed */
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+
+
+.main_content_wrapper {
+  display: flex;
+  flex-direction:row;}
+  
+  .content-wrapper.second {
+  max-width: 532px; /* Same max-width as the first one */
+  padding: 20px; /* Same padding */
+  box-sizing: border-box; /* Same box-sizing */
+  margin: 20px auto; /* Adjust margin as needed */
+  background-color: #000000;
+}
 @media only screen and (max-width: 720px) {
   nav {
     display: none;
@@ -653,5 +719,83 @@ height: 32px;
    }
    .product_list {
     margin-bottom: 20px;  
+  }
+}
+
+@media (max-width: 1200px) {
+  .text_h2 {
+    font-size: 36px;
+  }
+  .text_h3 {
+    font-size: 24px;
+  }
+  .general_p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textdiv {
+    padding: 15px;
+  }
+  .text_h2 {
+    font-size: 32px;
+  }
+  .text_h3 {
+    font-size: 20px;
+  }
+  .general_p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text_h2 {
+    font-size: 28px;
+  }
+  .text_h3 {
+    font-size: 18px;
+  }
+  .general_p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text_h2 {
+    font-size: 36px;
+  }
+  .text_h3 {
+    font-size: 24px;
+  }
+  .general_p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textdiv {
+    padding: 15px;
+  }
+  .text_h2 {
+    font-size: 32px;
+  }
+  .text_h3 {
+    font-size: 20px;
+  }
+  .general_p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text_h2 {
+    font-size: 28px;
+  }
+  .text_h3 {
+    font-size: 18px;
+  }
+  .general_p {
+    font-size: 12px;
   }
 }
