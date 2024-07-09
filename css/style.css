@@ -695,6 +695,14 @@ height: 32px;
   background-color: #F5F5F5; /* Lighter background color on hover */
   border-color: #CCCCCC; /* Lighter border color on hover */
 }
+.contact_h1{
+  font-size: 40px;
+  color: #000000;
+  height: 48px;
+  line-height: 48px;
+  margin-top: 20px;
+  width: 100%;
+}
 
 .contact-article {
   display: flex;
@@ -815,7 +823,7 @@ textarea {
   height: 45px;
   padding: 10px 16px;
   border-radius: 30px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: gray;
   font-size: 16px;
   border: none;
@@ -826,8 +834,26 @@ textarea {
   align-items: center; /* Center content vertically */
 }
 
-.send-button-p {
+.send-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: white;
+  text-decoration: none;
+  color: gray;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 5px;
+}
+
+.send-button:hover a {
+  background-color: black;
+  color: white;
+}
+
+.send-button p {
   margin: 0; /* Remove default margin for <p> */
+  width: 100%;
 }
 
 .send-button:hover {
@@ -838,6 +864,59 @@ textarea {
 .send-button:active {
   background-color: black; /* Maintain background color on click */
   color: white; /* Maintain text color on click */
+}
+
+.contact_us_inner_div1{
+width: 900px; 
+height: 959px;
+}
+
+
+.map {
+  width: 100%;
+  height: 288px;
+  padding-bottom: 30px;
+}
+
+.info_wrapper {
+  width: 700px;
+  height: 650px;
+  position: relative;
+  margin-top: 20px; /* Add some space between the map and the info_wrapper */
+}
+
+.info_wrap_h2 {
+  width: 100%;
+}
+
+.info_wrap_h2 h2 {
+  font-size: 28px; /* Increased font size */
+  color: #333e48;
+  margin: 20px 0; /* Add space above and below the h2 element */
+  text-align: left; /* Align text to the left */
+}
+
+.info_wrapper h4 {
+  font-size: 24px; /* Increased font size */
+  margin-bottom: 8px;
+  height: 25px;
+  color: #333e48;
+  text-align: left; /* Align text to the left */
+}
+
+.info_wrapper .p-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Distance between the two <p> elements */
+}
+
+.info_wrapper p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  color: #333e48;
+  text-align: left; /* Align text to the left */
+  margin-bottom: 20px;
 }
 
 
@@ -1170,9 +1249,32 @@ textarea {
     align-items: center;
   }
 
-  .contact_us_inner_div_custom_div {
+  .contact_us_inner_div_custom_div, .contact_us_inner_div1{
     width: 100%;
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_us_inner_div1 {
+    width: 100%;
+    padding: 0 20px; /* Add padding to the sides */
+    box-sizing: border-box;
+  }
+  
+  .info_wrapper {
+    max-width: 100%; /* Full width on smaller screens */
+    padding: 0 20px; /* Add padding to the sides */
+    box-sizing: border-box;
+  }
+  
+  .info_wrap_h2 h2 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+  
+  .info_wrapper h4 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px;
   }
 }
