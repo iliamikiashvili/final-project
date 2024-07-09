@@ -140,7 +140,7 @@ header ul li:hover {
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-family: monospace;
   border: none;
@@ -694,14 +694,6 @@ height: 32px;
 .get-in-touch2:hover {
   background-color: #F5F5F5; /* Lighter background color on hover */
   border-color: #CCCCCC; /* Lighter border color on hover */
-}
-h1 {
-  font-size: 40px;
-  color: #333e48;
-  height: 48px;
-  line-height: 48px;
-  margin-top: 20px;
-  width: 100%;
 }
 
 .contact-article {
