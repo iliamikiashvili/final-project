@@ -695,6 +695,97 @@ height: 32px;
   background-color: #F5F5F5; /* Lighter background color on hover */
   border-color: #CCCCCC; /* Lighter border color on hover */
 }
+
+
+.contact-article h1 {
+  font-size: 40px; /* Adjust font size */
+  color: #333e48;
+  height: 48px;
+  line-height: 48px;
+  margin-top: 20px; /* Adjust margin top */
+  width: 100%; /* Make h1 wider */
+}
+
+.contact-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center the article horizontally */
+  padding: 20px; /* Add padding */
+  box-sizing: border-box;
+}
+
+.main_contact_us_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center columns */
+  gap: 40px; /* Adjust gap between columns */
+  padding: 25px 0px 0px;
+}
+
+.contactus_inner_div, .contactus_inner_div2 {
+  width: 715px;
+  height: 813px;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Adjust background color */
+}
+
+.contactus_inner_div{
+  position: relative; /* Make the inner div a positioning context */
+}
+
+.contactus_inner_div h2 {
+  position: absolute; /* Position the h2 absolutely within the .contactus_inner_div */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  font-size: 25px;
+  margin: 0 0 30px; /* Margin bottom of 30px */
+  padding: 0 0 15px; /* Padding bottom of 15px */
+  color: #333E48; /* Text color */
+}
+.contact_us_inner_div_h2_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 685px;
+  height: 100px;
+  background-color: #FFFFFF; /* Optional background color */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.contact_us_inner_div_h2_wrapper h2 {
+  font-size: 25px;
+  margin: 0 0 10px; /* Margin bottom of 10px */
+  padding: 0; /* Remove padding */
+  color: #333E48; /* Text color */
+  margin-bottom: 20px;
+}
+
+.contact_us_inner_div_h2_wrapper p {
+  font-size: 14px; /* Font size 14px */
+  line-height: 24px; /* Height 24px */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  color: #333E48; /* Text color */
+  position: absolute;
+  bottom: 0;
+}
+
+.contact_us_inner_div_custom_div {
+  width: 357px;
+  height: 94px;
+  padding: 0px 15px;
+  background-color: rgb(37, 0, 0);
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+
 @media only screen and (max-width: 720px) {
   nav {
     display: none;
@@ -964,7 +1055,6 @@ height: 32px;
   .customdiv {
     width: calc(100% - 40px); /* Adjust width for smaller screens */
     max-width: 100%; /* Allow it to take full width on smaller screens */
-    padding: 10px; /* Reduce padding */
   }
 }
 
@@ -979,4 +1069,42 @@ height: 32px;
     margin-bottom: 10px; /* Further adjust for mobile screens */
   }
 }
+
+@media (max-width: 768px) {
+  .main_contact_us_div {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .contactus_inner_div, .contactus_inner_div2 {
+      width: 100%; /* Adjusted width for smaller screens */
+      margin-bottom: 20px; /* Spacing between columns */
+  }
+}
+
+
+@media (max-width: 768px){
+  .main_content_wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .customdiv, .customdiv2{
+    width: 100%;
+  }
+
+  .customdiv h2, .customdiv2 h2{
+      font-size: 30px;
+  }
+
+  .main_inner_div{
+    width: 100%;
+    margin-bottom: 20px;
+    margin: 15px 5px 20px 5px;
+    padding: auto;
+  }
+  .get-in-touch2{
+    margin: 0px 5px 20px 5px;
+  }
+}
+
 
